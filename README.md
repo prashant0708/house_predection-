@@ -8,8 +8,9 @@ To complete this House Predection Project following setup required
 
 
 Creating Conda enviroment 
+
 '''
-conda create -p venv python==3.7 -y
+ conda create -p venv python==3.7 -y
 
 ''''
 
@@ -82,3 +83,17 @@ To check remote url
 git remote  -v
 
 '''
+
+To setup CI/CD pipeline in heroku we need three information 
+
+1. Heroku_email = prashant.singh2012p@gmail.com
+2. Heroku_API_KEY= 8fb94ea9-9ae7-43a9-9ee8-bd4bfb3e6478
+3. hEROKU_app_name = house-ml-project
+
+BUILD DOCKER IMAGES 
+
+'''
+docker build -t <image_name>:<tagname>.
+
+'''
+> Note: Image name for docker must be lower case 
