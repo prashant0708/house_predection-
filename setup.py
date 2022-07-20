@@ -1,4 +1,4 @@
-from setuptools import setup 
+from setuptools import setup ,find_packages 
 from typing import List
 
 #Declaring variables for setup function
@@ -25,9 +25,7 @@ name=Project_Name,
 version=Version,
 author=AUTHOR,
 description=Description,
-packages=Packages,
+packages=find_packages(),
 install_requires=get_requirements_list()
 )
 
-if __name__=="__main__":
-    print(get_requirements_list())
