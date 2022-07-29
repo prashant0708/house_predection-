@@ -9,11 +9,12 @@ app= Flask(__name__)
 
 def index():
     try:
-        raise Exception("We aretesting custom exception")
+        raise Exception("We are testing custom exception")
     except Exception as e :
        housing= HousingException(e,sys)
        logging.info(housing.error_message)
        logging.info("We are testing logging module")
+       
     return "CI CD Pipeline has been stablished  "
 
 if __name__=="__main__":
